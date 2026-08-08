@@ -11,19 +11,13 @@
     "dev": "ts-node src/index.ts"
   },
   "dependencies": {
-    "better-sqlite3": "^13.0.3",
+    "@libsql/client": "^0.17.4",
     "discord.js": "^14.15.3",
     "dotenv": "^16.4.5"
   },
   "devDependencies": {
-    "@types/better-sqlite3": "^9.6.0",
     "@types/node": "^20.14.9",
     "ts-node": "^10.9.2",
     "typescript": "^5.5.3"
-  },
-  "pnpm": {
-    "onlyBuiltDependencies": [
-      "better-sqlite3"
-    ]
   }
 }

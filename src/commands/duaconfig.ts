@@ -37,7 +37,7 @@ export async function execute(interaction: ChatInputCommandInteraction) {
   if (display) patch.displayMode = display;
   if (ephemeral !== null) patch.ephemeral = ephemeral;
 
-  const updated = setGuildConfig(interaction.guildId, patch);
+  const updated = await setGuildConfig(interaction.guildId, patch);
 
   await interaction.reply({
     content: `Duʿāʾ settings updated:\n- Display: ${updated.displayMode}\n- Ephemeral: ${updated.ephemeral}`,

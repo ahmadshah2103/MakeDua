@@ -12,30 +12,30 @@ const DEFAULT_CONFIG: GuildConfig = {
   ephemeral: false,
 };
 
-interface GuildConfigRow {
-  display_mode: DisplayMode;
-  ephemeral: number;
-}
-
-const selectStmt = db.prepare<[string], GuildConfigRow>(
-  "SELECT display_mode, ephemeral FROM guild_config WHERE guild_id = ?"
-);
-const upsertStmt = db.prepare<[string, DisplayMode, number]>(`
-  INSERT INTO guild_config (guild_id, display_mode, ephemeral)
-  VALUES (?, ?, ?)
-  ON CONFLICT(guild_id) DO UPDATE SET display_mode = excluded.display_mode, ephemeral = excluded.ephemeral
-`);
-
-export function getGuildConfig(guildId: string | null): GuildConfig {
+export async function getGuildConfig(guildId: string | null): Promise<GuildConfig> {
   if (!guildId) return DEFAULT_CONFIG;
-  const row = selectStmt.get(guildId);
+  const result = await db.execute({
+    sql: "SELECT display_mode, ephemeral FROM guild_config WHERE guild_id = ?",
+    args: [guildId],
+  });
+  const row = result.rows[0];
   if (!row) return DEFAULT_CONFIG;
-  return { displayMode: row.display_mode, ephemeral: Boolean(row.ephemeral) };
+  return {
+    displayMode: row.display_mode as DisplayMode,
+    ephemeral: Boolean(row.ephemeral),
+  };
 }
 
-export function setGuildConfig(guildId: string, patch: Partial<GuildConfig>): GuildConfig {
-  const current = getGuildConfig(guildId);
+export async function setGuildConfig(guildId: string, patch: Partial<GuildConfig>): Promise<GuildConfig> {
+  const current = await getGuildConfig(guildId);
   const updated = { ...current, ...patch };
-  upsertStmt.run(guildId, updated.displayMode, updated.ephemeral ? 1 : 0);
+  await db.execute({
+    sql: `
+      INSERT INTO guild_config (guild_id, display_mode, ephemeral)
+      VALUES (?, ?, ?)
+      ON CONFLICT(guild_id) DO UPDATE SET display_mode = excluded.display_mode, ephemeral = excluded.ephemeral
+    `,
+    args: [guildId, updated.displayMode, updated.ephemeral ? 1 : 0],
+  });
   return updated;
 }

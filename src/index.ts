@@ -4,6 +4,7 @@ import { Client, Collection, Events, GatewayIntentBits, Interaction } from "disc
 import * as duaCommand from "./commands/dua";
 import * as duaConfigCommand from "./commands/duaconfig";
 import { duas } from "./duas";
+import { initDb } from "./db";
 
 const port = process.env.PORT;
 if (port) {
@@ -65,4 +66,9 @@ client.on(Events.InteractionCreate, async (interaction) => {
   }
 });
 
-client.login(token);
+initDb()
+  .then(() => client.login(token))
+  .catch((error) => {
+    console.error("Failed to initialize database:", error);
+    process.exit(1);
+  });

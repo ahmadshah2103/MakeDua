@@ -41,7 +41,7 @@ export async function execute(interaction: ChatInputCommandInteraction) {
   }
 
   const dua = resolveDuaText(entry, pronoun);
-  const config = getGuildConfig(interaction.guildId);
+  const config = await getGuildConfig(interaction.guildId);
   const lines = [dua.arabic];
   if (config.displayMode === "arabicTransliterationTranslation") {
     lines.push(dua.transliteration, dua.translation);
