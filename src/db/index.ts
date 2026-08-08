@@ -2,7 +2,7 @@ import path from "path";
 import fs from "fs";
 import Database from "better-sqlite3";
 
-const dataDir = path.join(__dirname, "..", "..", "data");
+const dataDir = process.env.DATA_DIR ?? path.join(__dirname, "..", "..", "data");
 if (!fs.existsSync(dataDir)) {
   fs.mkdirSync(dataDir, { recursive: true });
 }
