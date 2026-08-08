@@ -2,6 +2,7 @@ import "dotenv/config";
 import { REST, Routes } from "discord.js";
 import { data as duaCommand } from "./commands/dua";
 import { data as duaConfigCommand } from "./commands/duaconfig";
+import { data as duaContextCommand } from "./commands/duaContext";
 
 const token = process.env.DISCORD_TOKEN;
 const clientId = process.env.DISCORD_CLIENT_ID;
@@ -11,7 +12,7 @@ if (!token || !clientId) {
   throw new Error("DISCORD_TOKEN and DISCORD_CLIENT_ID must be set in the environment.");
 }
 
-const commands = [duaCommand.toJSON(), duaConfigCommand.toJSON()];
+const commands = [duaCommand.toJSON(), duaConfigCommand.toJSON(), duaContextCommand.toJSON()];
 const rest = new REST().setToken(token);
 
 async function deploy() {

@@ -1,9 +1,21 @@
 import "dotenv/config";
 import http from "http";
-import { Client, Collection, Events, GatewayIntentBits, Interaction } from "discord.js";
+import {
+  ActionRowBuilder,
+  ButtonBuilder,
+  ButtonStyle,
+  Client,
+  Collection,
+  Events,
+  GatewayIntentBits,
+  Interaction,
+  StringSelectMenuBuilder,
+} from "discord.js";
 import * as duaCommand from "./commands/dua";
 import * as duaConfigCommand from "./commands/duaconfig";
-import { duas } from "./duas";
+import * as duaContextCommand from "./commands/duaContext";
+import { duas, duaCategories, resolveDuaText, DEFAULT_PRONOUN } from "./duas";
+import { getGuildConfig } from "./config";
 import { initDb } from "./db";
 
 const port = process.env.PORT;
@@ -45,6 +57,64 @@ client.on(Events.InteractionCreate, async (interaction) => {
       return;
     }
     await interaction.reply({ content: `📖 Source: ${entry.source}`, ephemeral: true });
+    return;
+  }
+
+  if (interaction.isMessageContextMenuCommand() && interaction.commandName === duaContextCommand.data.name) {
+    const menu = new StringSelectMenuBuilder()
+      .setCustomId(`dua_ctx_select:${interaction.targetId}`)
+      .setPlaceholder("Choose a duʿāʾ category")
+      .addOptions(duaCategories.map((c) => ({ label: c.name, value: c.value })));
+    const row = new ActionRowBuilder<StringSelectMenuBuilder>().addComponents(menu);
+    await interaction.reply({
+      content: "Pick a duʿāʾ to send in reply to this message:",
+      components: [row],
+      ephemeral: true,
+    });
+    return;
+  }
+
+  if (interaction.isStringSelectMenu() && interaction.customId.startsWith("dua_ctx_select:")) {
+    const targetMessageId = interaction.customId.split(":")[1];
+    const type = interaction.values[0];
+    const entry = duas[type];
+    if (!entry) {
+      await interaction.update({ content: "That duʿāʾ category could not be found.", components: [] });
+      return;
+    }
+
+    const dua = resolveDuaText(entry, DEFAULT_PRONOUN);
+    const config = await getGuildConfig(interaction.guildId);
+    const lines = [dua.arabic];
+    if (config.displayMode === "arabicTransliterationTranslation") {
+      lines.push(dua.transliteration, dua.translation);
+    } else if (config.displayMode === "arabicTranslation") {
+      lines.push(dua.translation);
+    }
+    const body = lines.join("\n");
+
+    const sourceButton = new ButtonBuilder()
+      .setCustomId(`dua_source:${type}`)
+      .setLabel("📖 Source")
+      .setStyle(ButtonStyle.Secondary);
+    const row = new ActionRowBuilder<ButtonBuilder>().addComponents(sourceButton);
+
+    if (config.ephemeral) {
+      await interaction.update({ content: body, components: [row] });
+      return;
+    }
+
+    const channel = interaction.channel;
+    const targetMessage = channel?.isTextBased()
+      ? await channel.messages.fetch(targetMessageId).catch(() => null)
+      : null;
+
+    if (targetMessage) {
+      await targetMessage.reply({ content: body, components: [row] });
+      await interaction.update({ content: "Sent ✅", components: [] });
+    } else {
+      await interaction.update({ content: body, components: [row] });
+    }
     return;
   }
 
