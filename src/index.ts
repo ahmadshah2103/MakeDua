@@ -14,7 +14,7 @@ import {
 import * as duaCommand from "./commands/dua";
 import * as duaConfigCommand from "./commands/duaconfig";
 import * as duaContextCommand from "./commands/duaContext";
-import { duas, duaCategories, resolveDuaText, DEFAULT_PRONOUN } from "./duas";
+import { duas, duaCategories, resolveDuaText, formatDuaBody, DEFAULT_PRONOUN } from "./duas";
 import { getGuildConfig } from "./config";
 import { initDb } from "./db";
 
@@ -85,13 +85,7 @@ client.on(Events.InteractionCreate, async (interaction) => {
 
     const dua = resolveDuaText(entry, DEFAULT_PRONOUN);
     const config = await getGuildConfig(interaction.guildId);
-    const lines = [dua.arabic];
-    if (config.displayMode === "arabicTransliterationTranslation") {
-      lines.push(dua.transliteration, dua.translation);
-    } else if (config.displayMode === "arabicTranslation") {
-      lines.push(dua.translation);
-    }
-    const body = lines.join("\n");
+    const body = formatDuaBody(dua, config.displayMode);
 
     const sourceButton = new ButtonBuilder()
       .setCustomId(`dua_source:${type}`)

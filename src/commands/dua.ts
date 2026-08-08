@@ -5,7 +5,7 @@ import {
   ChatInputCommandInteraction,
   SlashCommandBuilder,
 } from "discord.js";
-import { duas, duaCategories, resolveDuaText, PRONOUN_LABELS, DEFAULT_PRONOUN, PronounKey } from "../duas";
+import { duas, duaCategories, resolveDuaText, formatDuaBody, PRONOUN_LABELS, DEFAULT_PRONOUN, PronounKey } from "../duas";
 import { getGuildConfig } from "../config";
 
 export const data = new SlashCommandBuilder()
@@ -42,14 +42,7 @@ export async function execute(interaction: ChatInputCommandInteraction) {
 
   const dua = resolveDuaText(entry, pronoun);
   const config = await getGuildConfig(interaction.guildId);
-  const lines = [dua.arabic];
-  if (config.displayMode === "arabicTransliterationTranslation") {
-    lines.push(dua.transliteration, dua.translation);
-  } else if (config.displayMode === "arabicTranslation") {
-    lines.push(dua.translation);
-  }
-
-  const body = lines.join("\n");
+  const body = formatDuaBody(dua, config.displayMode);
   const content = mentionedUser ? `${mentionedUser}\n\n${body}` : body;
 
   const sourceButton = new ButtonBuilder()

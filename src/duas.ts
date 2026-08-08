@@ -1,4 +1,5 @@
 import duasData from "./data/duas.json";
+import { DisplayMode } from "./config";
 
 export interface DuaText {
   arabic: string;
@@ -45,6 +46,22 @@ export const duas: Record<string, DuaEntry> = duasData as Record<string, DuaEntr
 
 export function resolveDuaText(entry: DuaEntry, pronoun: PronounKey): DuaText {
   return entry.conjugatable ? entry.variants[pronoun] : entry.text;
+}
+
+export function formatDuaBody(dua: DuaText, displayMode: DisplayMode): string {
+  switch (displayMode) {
+    case "arabicTransliterationTranslation":
+      return [dua.arabic, dua.transliteration, dua.translation].join("\n");
+    case "arabicTranslation":
+      return [dua.arabic, dua.translation].join("\n");
+    case "transliterationOnly":
+      return dua.transliteration;
+    case "translationOnly":
+      return dua.translation;
+    case "arabicOnly":
+    default:
+      return dua.arabic;
+  }
 }
 
 function truncate(text: string, maxLength: number): string {

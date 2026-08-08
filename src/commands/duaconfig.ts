@@ -17,7 +17,9 @@ export const data = new SlashCommandBuilder()
       .addChoices(
         { name: "Arabic only", value: "arabicOnly" },
         { name: "Arabic + Translation", value: "arabicTranslation" },
-        { name: "Arabic + Transliteration + Translation", value: "arabicTransliterationTranslation" }
+        { name: "Arabic + Transliteration + Translation", value: "arabicTransliterationTranslation" },
+        { name: "Transliteration only", value: "transliterationOnly" },
+        { name: "Translation only", value: "translationOnly" }
       )
   )
   .addBooleanOption((option) =>

@@ -1,6 +1,11 @@
 import { db } from "./db";
 
-export type DisplayMode = "arabicOnly" | "arabicTranslation" | "arabicTransliterationTranslation";
+export type DisplayMode =
+  | "arabicOnly"
+  | "arabicTranslation"
+  | "arabicTransliterationTranslation"
+  | "transliterationOnly"
+  | "translationOnly";
 
 export interface GuildConfig {
   displayMode: DisplayMode;
