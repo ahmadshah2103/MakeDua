@@ -1,8 +1,19 @@
 import "dotenv/config";
+import http from "http";
 import { Client, Collection, Events, GatewayIntentBits, Interaction } from "discord.js";
 import * as duaCommand from "./commands/dua";
 import * as duaConfigCommand from "./commands/duaconfig";
 import { duas } from "./duas";
+
+const port = process.env.PORT;
+if (port) {
+  http
+    .createServer((_req, res) => {
+      res.writeHead(200, { "Content-Type": "text/plain" });
+      res.end("MakeDua bot is running.");
+    })
+    .listen(port, () => console.log(`Health check server listening on port ${port}`));
+}
 
 interface Command {
   data: { name: string };
