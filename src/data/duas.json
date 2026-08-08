@@ -1,0 +1,239 @@
+{
+  "guidance": {
+    "label": "Guidance",
+    "quranic": false,
+    "conjugatable": true,
+    "source": "Ṣaḥīḥ Muslim (also cited in Riyāḍ aṣ-Ṣāliḥīn 1473); taught by the Prophet ﷺ to ʿAlī ibn Abī Ṭālib",
+    "sourceShort": "Muslim (Riyad 1473)",
+    "variants": {
+      "you_m": { "arabic": "اللهم اهدك وسددك", "transliteration": "Allāhumma-hdika wa saddidk.", "translation": "O Allah, guide you and make you steadfast." },
+      "you_f": { "arabic": "اللهم اهدكِ وسددكِ", "transliteration": "Allāhumma-hdiki wa saddidki.", "translation": "O Allah, guide you and make you steadfast." },
+      "you_pl": { "arabic": "اللهم اهدكم وسددكم", "transliteration": "Allāhumma-hdikum wa saddidkum.", "translation": "O Allah, guide you all and make you all steadfast." },
+      "me": { "arabic": "اللهم اهدني وسددني", "transliteration": "Allāhumma-hdinī wa saddidnī.", "translation": "O Allah, guide me and make me steadfast." },
+      "us": { "arabic": "اللهم اهدنا وسددنا", "transliteration": "Allāhumma-hdinā wa saddidnā.", "translation": "O Allah, guide us and make us steadfast." },
+      "him": { "arabic": "اللهم اهده وسدده", "transliteration": "Allāhumma-hdihi wa saddidhu.", "translation": "O Allah, guide him and make him steadfast." },
+      "her": { "arabic": "اللهم اهدها وسددها", "transliteration": "Allāhumma-hdihā wa saddidhā.", "translation": "O Allah, guide her and make her steadfast." },
+      "them": { "arabic": "اللهم اهدهم وسددهم", "transliteration": "Allāhumma-hdihim wa saddidhum.", "translation": "O Allah, guide them and make them steadfast." }
+    }
+  },
+  "healing": {
+    "label": "Healing",
+    "quranic": false,
+    "conjugatable": true,
+    "source": "Jāmiʿ at-Tirmidhī 2083 (graded ḥasan)",
+    "sourceShort": "Tirmidhi 2083",
+    "variants": {
+      "you_m": { "arabic": "أسأل الله العظيم رب العرش العظيم أن يشفيَك", "transliteration": "As'alu Allāha al-'Aẓīma Rabbal-'Arshil-'Aẓīmi an yashfiyak.", "translation": "I ask Allah the Mighty, Lord of the Mighty Throne, to heal you." },
+      "you_f": { "arabic": "أسأل الله العظيم رب العرش العظيم أن يشفيَكِ", "transliteration": "As'alu Allāha al-'Aẓīma Rabbal-'Arshil-'Aẓīmi an yashfiyaki.", "translation": "I ask Allah the Mighty, Lord of the Mighty Throne, to heal you." },
+      "you_pl": { "arabic": "أسأل الله العظيم رب العرش العظيم أن يشفيَكم", "transliteration": "As'alu Allāha al-'Aẓīma Rabbal-'Arshil-'Aẓīmi an yashfiyakum.", "translation": "I ask Allah the Mighty, Lord of the Mighty Throne, to heal you all." },
+      "me": { "arabic": "أسأل الله العظيم رب العرش العظيم أن يشفيَني", "transliteration": "As'alu Allāha al-'Aẓīma Rabbal-'Arshil-'Aẓīmi an yashfiyanī.", "translation": "I ask Allah the Mighty, Lord of the Mighty Throne, to heal me." },
+      "us": { "arabic": "أسأل الله العظيم رب العرش العظيم أن يشفيَنا", "transliteration": "As'alu Allāha al-'Aẓīma Rabbal-'Arshil-'Aẓīmi an yashfiyanā.", "translation": "I ask Allah the Mighty, Lord of the Mighty Throne, to heal us." },
+      "him": { "arabic": "أسأل الله العظيم رب العرش العظيم أن يشفيَه", "transliteration": "As'alu Allāha al-'Aẓīma Rabbal-'Arshil-'Aẓīmi an yashfiyah.", "translation": "I ask Allah the Mighty, Lord of the Mighty Throne, to heal him." },
+      "her": { "arabic": "أسأل الله العظيم رب العرش العظيم أن يشفيَها", "transliteration": "As'alu Allāha al-'Aẓīma Rabbal-'Arshil-'Aẓīmi an yashfiyahā.", "translation": "I ask Allah the Mighty, Lord of the Mighty Throne, to heal her." },
+      "them": { "arabic": "أسأل الله العظيم رب العرش العظيم أن يشفيَهم", "transliteration": "As'alu Allāha al-'Aẓīma Rabbal-'Arshil-'Aẓīmi an yashfiyahum.", "translation": "I ask Allah the Mighty, Lord of the Mighty Throne, to heal them." }
+    }
+  },
+  "ease": {
+    "label": "Ease",
+    "quranic": false,
+    "conjugatable": false,
+    "source": "Ibn Ḥibbān 2427 (graded ṣaḥīḥ by Ibn Ḥajar)",
+    "sourceShort": "Ibn Hibban 2427",
+    "text": {
+      "arabic": "اللهم لا سهل إلا ما جعلته سهلاً، وأنت تجعل الحزن إذا شئت سهلاً",
+      "transliteration": "Allāhumma lā sahla illā mā ja'altahu sahlā, wa anta taj'alul-ḥazna idhā shi'ta sahlā.",
+      "translation": "O Allah, nothing is easy except what You make easy, and You make sorrow easy if You will."
+    }
+  },
+  "success": {
+    "label": "Success",
+    "quranic": false,
+    "conjugatable": false,
+    "source": "Sunan Ibn Mājah 3846",
+    "sourceShort": "Ibn Majah 3846",
+    "text": {
+      "arabic": "اللهم إني أسألك من الخير كله، عاجله وآجله، ما علمت منه وما لم أعلم",
+      "transliteration": "Allāhumma innī as'aluka minal-khayri kullih, 'ājilihi wa ājilih, mā 'alimtu minhu wa mā lam a'lam.",
+      "translation": "O Allah, I ask You for all good, near and distant, what I know of it and what I don't."
+    }
+  },
+  "protection": {
+    "label": "Protection",
+    "quranic": false,
+    "conjugatable": true,
+    "source": "Ṣaḥīḥ al-Bukhārī 3371; the Prophet ﷺ would seek refuge for al-Ḥasan and al-Ḥusayn with these words",
+    "sourceShort": "Bukhari 3371",
+    "variants": {
+      "you_m": { "arabic": "أعيذك بكلمات الله التامة من كل شيطان وهامة، ومن كل عين لامة", "transliteration": "Uʿīdhuka bi-kalimātillāhi at-tāmmati min kulli shayṭāninwa hāmmah, wa min kulli ʿaynin lāmmah.", "translation": "I seek refuge for you in the perfect words of Allah, from every devil and poisonous creature, and from every evil eye." },
+      "you_f": { "arabic": "أعيذكِ بكلمات الله التامة من كل شيطان وهامة، ومن كل عين لامة", "transliteration": "Uʿīdhuki bi-kalimātillāhi at-tāmmati min kulli shayṭāninwa hāmmah, wa min kulli ʿaynin lāmmah.", "translation": "I seek refuge for you in the perfect words of Allah, from every devil and poisonous creature, and from every evil eye." },
+      "you_pl": { "arabic": "أعيذكم بكلمات الله التامة من كل شيطان وهامة، ومن كل عين لامة", "transliteration": "Uʿīdhukum bi-kalimātillāhi at-tāmmati min kulli shayṭāninwa hāmmah, wa min kulli ʿaynin lāmmah.", "translation": "I seek refuge for you all in the perfect words of Allah, from every devil and poisonous creature, and from every evil eye." },
+      "me": { "arabic": "أعوذ بكلمات الله التامة من كل شيطان وهامة، ومن كل عين لامة", "transliteration": "Aʿūdhu bi-kalimātillāhi at-tāmmati min kulli shayṭāninwa hāmmah, wa min kulli ʿaynin lāmmah.", "translation": "I seek refuge in the perfect words of Allah, from every devil and poisonous creature, and from every evil eye." },
+      "us": { "arabic": "نعوذ بكلمات الله التامة من كل شيطان وهامة، ومن كل عين لامة", "transliteration": "Naʿūdhu bi-kalimātillāhi at-tāmmati min kulli shayṭāninwa hāmmah, wa min kulli ʿaynin lāmmah.", "translation": "We seek refuge in the perfect words of Allah, from every devil and poisonous creature, and from every evil eye." },
+      "him": { "arabic": "أعيذه بكلمات الله التامة من كل شيطان وهامة، ومن كل عين لامة", "transliteration": "Uʿīdhuhu bi-kalimātillāhi at-tāmmati min kulli shayṭāninwa hāmmah, wa min kulli ʿaynin lāmmah.", "translation": "I seek refuge for him in the perfect words of Allah, from every devil and poisonous creature, and from every evil eye." },
+      "her": { "arabic": "أعيذها بكلمات الله التامة من كل شيطان وهامة، ومن كل عين لامة", "transliteration": "Uʿīdhuhā bi-kalimātillāhi at-tāmmati min kulli shayṭāninwa hāmmah, wa min kulli ʿaynin lāmmah.", "translation": "I seek refuge for her in the perfect words of Allah, from every devil and poisonous creature, and from every evil eye." },
+      "them": { "arabic": "أعيذهم بكلمات الله التامة من كل شيطان وهامة، ومن كل عين لامة", "transliteration": "Uʿīdhuhum bi-kalimātillāhi at-tāmmati min kulli shayṭāninwa hāmmah, wa min kulli ʿaynin lāmmah.", "translation": "I seek refuge for them in the perfect words of Allah, from every devil and poisonous creature, and from every evil eye." }
+    }
+  },
+  "patience": {
+    "label": "Patience",
+    "quranic": false,
+    "conjugatable": true,
+    "source": "Ṣaḥīḥ Muslim 918; the Prophet ﷺ taught this to Umm Salamah upon calamity",
+    "sourceShort": "Muslim 918",
+    "variants": {
+      "you_m": { "arabic": "اللهم أجرك في مصيبتك واخلف لك خيراً منها", "transliteration": "Allāhumma ajuraka fī muṣībatika wakhluf laka khayran minhā.", "translation": "O Allah, reward you for your affliction and replace it for you with something better." },
+      "you_f": { "arabic": "اللهم أجركِ في مصيبتكِ واخلف لكِ خيراً منها", "transliteration": "Allāhumma ajuraki fī muṣībatiki wakhluf laki khayran minhā.", "translation": "O Allah, reward you for your affliction and replace it for you with something better." },
+      "you_pl": { "arabic": "اللهم أجركم في مصيبتكم واخلف لكم خيراً منها", "transliteration": "Allāhumma ajurakum fī muṣībatikum wakhluf lakum khayran minhā.", "translation": "O Allah, reward you all for your affliction and replace it for you with something better." },
+      "me": { "arabic": "اللهم أجرني في مصيبتي واخلف لي خيراً منها", "transliteration": "Allāhumma-jurnī fī muṣībatī wakhluf lī khayran minhā.", "translation": "O Allah, reward me for my affliction and replace it for me with something better." },
+      "us": { "arabic": "اللهم أجرنا في مصيبتنا واخلف لنا خيراً منها", "transliteration": "Allāhumma ajurnā fī muṣībatinā wakhluf lanā khayran minhā.", "translation": "O Allah, reward us for our affliction and replace it for us with something better." },
+      "him": { "arabic": "اللهم أجره في مصيبته واخلف له خيراً منها", "transliteration": "Allāhumma ajurhu fī muṣībatihi wakhluf lahu khayran minhā.", "translation": "O Allah, reward him for his affliction and replace it for him with something better." },
+      "her": { "arabic": "اللهم أجرها في مصيبتها واخلف لها خيراً منها", "transliteration": "Allāhumma ajurhā fī muṣībatihā wakhluf lahā khayran minhā.", "translation": "O Allah, reward her for her affliction and replace it for her with something better." },
+      "them": { "arabic": "اللهم أجرهم في مصيبتهم واخلف لهم خيراً منها", "transliteration": "Allāhumma ajurhum fī muṣībatihim wakhluf lahum khayran minhā.", "translation": "O Allah, reward them for their affliction and replace it for them with something better." }
+    }
+  },
+  "forgiveness": {
+    "label": "Forgiveness",
+    "quranic": false,
+    "conjugatable": true,
+    "source": "Ṣaḥīḥ al-Bukhārī 6306 (agreed upon; from the Prophet's ﷺ duʿāʾ in rukūʿ and sujūd)",
+    "sourceShort": "Bukhari 6306",
+    "variants": {
+      "you_m": { "arabic": "اللهم اغفر لك", "transliteration": "Allāhumma-ghfir lak.", "translation": "O Allah, forgive you." },
+      "you_f": { "arabic": "اللهم اغفر لكِ", "transliteration": "Allāhumma-ghfir laki.", "translation": "O Allah, forgive you." },
+      "you_pl": { "arabic": "اللهم اغفر لكم", "transliteration": "Allāhumma-ghfir lakum.", "translation": "O Allah, forgive you all." },
+      "me": { "arabic": "اللهم اغفر لي", "transliteration": "Allāhumma-ghfir lī.", "translation": "O Allah, forgive me." },
+      "us": { "arabic": "اللهم اغفر لنا", "transliteration": "Allāhumma-ghfir lanā.", "translation": "O Allah, forgive us." },
+      "him": { "arabic": "اللهم اغفر له", "transliteration": "Allāhumma-ghfir lahu.", "translation": "O Allah, forgive him." },
+      "her": { "arabic": "اللهم اغفر لها", "transliteration": "Allāhumma-ghfir lahā.", "translation": "O Allah, forgive her." },
+      "them": { "arabic": "اللهم اغفر لهم", "transliteration": "Allāhumma-ghfir lahum.", "translation": "O Allah, forgive them." }
+    }
+  },
+  "mercy": {
+    "label": "Mercy",
+    "quranic": false,
+    "conjugatable": true,
+    "source": "Ṣaḥīḥ al-Bukhārī 6224; the Prophet's ﷺ instruction for replying to someone who sneezes and praises Allah",
+    "sourceShort": "Bukhari 6224",
+    "variants": {
+      "you_m": { "arabic": "يرحمك الله", "transliteration": "Yarḥamuka Allāh.", "translation": "May Allah have mercy on you." },
+      "you_f": { "arabic": "يرحمكِ الله", "transliteration": "Yarḥamuki Allāh.", "translation": "May Allah have mercy on you." },
+      "you_pl": { "arabic": "يرحمكم الله", "transliteration": "Yarḥamukumu Allāh.", "translation": "May Allah have mercy on you all." },
+      "me": { "arabic": "يرحمني الله", "transliteration": "Yarḥamunī Allāh.", "translation": "May Allah have mercy on me." },
+      "us": { "arabic": "يرحمنا الله", "transliteration": "Yarḥamunā Allāh.", "translation": "May Allah have mercy on us." },
+      "him": { "arabic": "يرحمه الله", "transliteration": "Yarḥamuhu Allāh.", "translation": "May Allah have mercy on him." },
+      "her": { "arabic": "يرحمها الله", "transliteration": "Yarḥamuhā Allāh.", "translation": "May Allah have mercy on her." },
+      "them": { "arabic": "يرحمهم الله", "transliteration": "Yarḥamuhumu Allāh.", "translation": "May Allah have mercy on them." }
+    }
+  },
+  "blessing": {
+    "label": "Blessing",
+    "quranic": false,
+    "conjugatable": true,
+    "source": "Jāmiʿ at-Tirmidhī 1091",
+    "sourceShort": "Tirmidhi 1091",
+    "variants": {
+      "you_m": { "arabic": "بارك الله لك وبارك عليك", "transliteration": "Bāraka Allāhu laka wa bāraka 'alayk.", "translation": "May Allah bless you." },
+      "you_f": { "arabic": "بارك الله لكِ وبارك عليكِ", "transliteration": "Bāraka Allāhu laki wa bāraka 'alayki.", "translation": "May Allah bless you." },
+      "you_pl": { "arabic": "بارك الله لكم وبارك عليكم", "transliteration": "Bāraka Allāhu lakum wa bāraka 'alaykum.", "translation": "May Allah bless you all." },
+      "me": { "arabic": "بارك الله لي وبارك عليّ", "transliteration": "Bāraka Allāhu lī wa bāraka 'alayya.", "translation": "May Allah bless me." },
+      "us": { "arabic": "بارك الله لنا وبارك علينا", "transliteration": "Bāraka Allāhu lanā wa bāraka 'alaynā.", "translation": "May Allah bless us." },
+      "him": { "arabic": "بارك الله له وبارك عليه", "transliteration": "Bāraka Allāhu lahu wa bāraka 'alayhi.", "translation": "May Allah bless him." },
+      "her": { "arabic": "بارك الله لها وبارك عليها", "transliteration": "Bāraka Allāhu lahā wa bāraka 'alayhā.", "translation": "May Allah bless her." },
+      "them": { "arabic": "بارك الله لهم وبارك عليهم", "transliteration": "Bāraka Allāhu lahum wa bāraka 'alayhim.", "translation": "May Allah bless them." }
+    }
+  },
+  "gratitude": {
+    "label": "Gratitude / General",
+    "quranic": false,
+    "conjugatable": true,
+    "source": "Jāmiʿ at-Tirmidhī 2035 (graded ḥasan)",
+    "sourceShort": "Tirmidhi 2035",
+    "variants": {
+      "you_m": { "arabic": "جزاك الله خيراً", "transliteration": "Jazāka Allāhu khayrā.", "translation": "May Allah reward you with good." },
+      "you_f": { "arabic": "جزاكِ الله خيراً", "transliteration": "Jazāki Allāhu khayrā.", "translation": "May Allah reward you with good." },
+      "you_pl": { "arabic": "جزاكم الله خيراً", "transliteration": "Jazākum Allāhu khayrā.", "translation": "May Allah reward you all with good." },
+      "me": { "arabic": "جزاني الله خيراً", "transliteration": "Jazānī Allāhu khayrā.", "translation": "May Allah reward me with good." },
+      "us": { "arabic": "جزانا الله خيراً", "transliteration": "Jazānā Allāhu khayrā.", "translation": "May Allah reward us with good." },
+      "him": { "arabic": "جزاه الله خيراً", "transliteration": "Jazāhu Allāhu khayrā.", "translation": "May Allah reward him with good." },
+      "her": { "arabic": "جزاها الله خيراً", "transliteration": "Jazāhā Allāhu khayrā.", "translation": "May Allah reward her with good." },
+      "them": { "arabic": "جزاهم الله خيراً", "transliteration": "Jazāhumu Allāhu khayrā.", "translation": "May Allah reward them with good." }
+    }
+  },
+  "knowledge": {
+    "label": "Knowledge",
+    "quranic": false,
+    "conjugatable": true,
+    "source": "Ṣaḥīḥ al-Bukhārī 143; the Prophet's ﷺ duʿāʾ for Ibn ʿAbbās",
+    "sourceShort": "Bukhari 143",
+    "variants": {
+      "you_m": { "arabic": "اللهم فقهك في الدين", "transliteration": "Allāhumma faqqihka fid-dīn.", "translation": "O Allah, grant you understanding of the religion." },
+      "you_f": { "arabic": "اللهم فقهكِ في الدين", "transliteration": "Allāhumma faqqihki fid-dīn.", "translation": "O Allah, grant you understanding of the religion." },
+      "you_pl": { "arabic": "اللهم فقهكم في الدين", "transliteration": "Allāhumma faqqihkum fid-dīn.", "translation": "O Allah, grant you all understanding of the religion." },
+      "me": { "arabic": "اللهم فقهني في الدين", "transliteration": "Allāhumma faqqihnī fid-dīn.", "translation": "O Allah, grant me understanding of the religion." },
+      "us": { "arabic": "اللهم فقهنا في الدين", "transliteration": "Allāhumma faqqihnā fid-dīn.", "translation": "O Allah, grant us understanding of the religion." },
+      "him": { "arabic": "اللهم فقهه في الدين", "transliteration": "Allāhumma faqqihhu fid-dīn.", "translation": "O Allah, grant him understanding of the religion." },
+      "her": { "arabic": "اللهم فقهها في الدين", "transliteration": "Allāhumma faqqihhā fid-dīn.", "translation": "O Allah, grant her understanding of the religion." },
+      "them": { "arabic": "اللهم فقههم في الدين", "transliteration": "Allāhumma faqqihhum fid-dīn.", "translation": "O Allah, grant them understanding of the religion." }
+    }
+  },
+  "rizq": {
+    "label": "Rizq",
+    "quranic": false,
+    "conjugatable": false,
+    "source": "Jāmiʿ at-Tirmidhī (cited in Riyāḍ aṣ-Ṣāliḥīn 1486)",
+    "sourceShort": "Tirmidhi (Riyad 1486)",
+    "text": {
+      "arabic": "اللهم اكفني بحلالك عن حرامك، وأغنني بفضلك عمن سواك",
+      "transliteration": "Allāhumm-akfinī bi-ḥalālika 'an ḥarāmik, wa aghninī bi-faḍlika 'amman siwāk.",
+      "translation": "O Allah, suffice me with what You have made lawful, keeping me from what You have made unlawful, and enrich me by Your favor from all besides You."
+    }
+  },
+  "marriage": {
+    "label": "Marriage",
+    "quranic": false,
+    "conjugatable": false,
+    "source": "Jāmiʿ at-Tirmidhī 1091",
+    "sourceShort": "Tirmidhi 1091",
+    "text": {
+      "arabic": "بارك الله لكما وبارك عليكما وجمع بينكما في خير",
+      "transliteration": "Bāraka Allāhu lakumā wa bāraka 'alaykumā wa jama'a baynakumā fī khayr.",
+      "translation": "May Allah bless you both and unite you in goodness."
+    }
+  },
+  "travel": {
+    "label": "Travel",
+    "quranic": false,
+    "conjugatable": false,
+    "source": "Ṣaḥīḥ Muslim (cited in Riyāḍ aṣ-Ṣāliḥīn 972)",
+    "sourceShort": "Muslim (Riyad 972)",
+    "text": {
+      "arabic": "اللهم إنا نسألك في سفرنا هذا البر والتقوى، ومن العمل ما ترضى",
+      "transliteration": "Allāhumma innā nas'aluka fī safarinā hādhal-birra wat-taqwā, wa minal-'amali mā tarḍā.",
+      "translation": "O Allah, we ask You for righteousness and piety in this journey, and deeds that please You."
+    }
+  },
+  "exam": {
+    "label": "Exam",
+    "quranic": true,
+    "conjugatable": false,
+    "source": "Qur'an 20:25-26 (Sūrah Ṭāhā)",
+    "sourceShort": "Qur'an 20:25-26",
+    "text": {
+      "arabic": "رب اشرح لي صدري ويسر لي أمري",
+      "transliteration": "Rabbi-shraḥ lī ṣadrī wa yassir lī amrī",
+      "translation": "My Lord, expand my chest for me and ease my task for me."
+    }
+  },
+  "work": {
+    "label": "Work",
+    "quranic": false,
+    "conjugatable": false,
+    "source": "Ibn Ḥibbān 2427 (graded ṣaḥīḥ by Ibn Ḥajar)",
+    "sourceShort": "Ibn Hibban 2427",
+    "text": {
+      "arabic": "اللهم لا سهل إلا ما جعلته سهلاً، وأنت تجعل الحزن إذا شئت سهلاً",
+      "transliteration": "Allāhumma lā sahla illā mā ja'altahu sahlā, wa anta taj'alul-ḥazna idhā shi'ta sahlā.",
+      "translation": "O Allah, nothing is easy except what You make easy, and You make sorrow easy if You will."
+    }
+  }
+}
